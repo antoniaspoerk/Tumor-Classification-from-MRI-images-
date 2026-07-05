@@ -8,18 +8,23 @@ This project applies deep learning to classify brain MRI scans into four categor
    ```bash
    git clone https://github.com/antoniaspoerk/Tumor-Classification-from-MRI-images.git
    cd Tumor-Classification-from-MRI-images
+   ```
+
 2. **Install the dependencies**
    ```bash
    pip install torch torchvision matplotlib seaborn numpy scikit-learn jupyter
+   ```
 
-3. **Get the dataset**:
-   Download the [Brain Tumor MRI Dataset](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset) from Kaggle         (glioma, meningioma, pituitary, and no-tumor classes), then split it into `train`/`val`/`test` folders and place it somewhere on     your machine, e.g. `./data`.
+3. **Get the dataset**
+   Download the [Brain Tumor MRI Dataset](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset) from Kaggle (glioma, meningioma, pituitary, and no-tumor classes), then split it into `train`/`val`/`test` folders and place it somewhere on your machine, e.g. `./data`.
 
-4. **Update the data path**:
+4. **Update the data path**
    The notebook was originally built for Google Colab, so it mounts Google Drive. Replace that cell with a local path instead:
-   ```bash
+   ```python
    DATA_PATH = "./data"
+   ```
 
 5. **Launch the notebook**
    ```bash
    jupyter notebook Tumor_Classification.ipynb
+   ```
