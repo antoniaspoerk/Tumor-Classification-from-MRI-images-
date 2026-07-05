@@ -16,7 +16,8 @@ This project applies deep learning to classify brain MRI scans into four categor
 
 4. **Update the data path**
    The notebook was originally built for Google Colab, so it mounts Google Drive. Replace that cell with a local path instead:
-   ```bash DATA_PATH = "./data"
+   ```bash
+   DATA_PATH = "./data"
 
 5. **Launch the notebook**
    Tumor_Classification.ipynb
