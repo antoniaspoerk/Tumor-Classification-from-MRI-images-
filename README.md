@@ -9,6 +9,7 @@ This project applies deep learning to classify brain MRI scans into four categor
    git clone https://github.com/antoniaspoerk/Tumor-Classification-from-MRI-images-/tree/main.git
    cd Tumor-Classification-from-MRI-images
 2. **Install the dependencies**
+   ```bash
    pip install torch torchvision matplotlib seaborn numpy scikit-learn jupyter
 
 3. **Get the dataset**
