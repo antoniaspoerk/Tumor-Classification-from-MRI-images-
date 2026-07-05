@@ -13,7 +13,7 @@ This project applies deep learning to classify brain MRI scans into four categor
    pip install torch torchvision matplotlib seaborn numpy scikit-learn jupyter
 
 3. **Get the dataset**
-   Download the MRI dataset (train/val/test folders, one subfolder per class) and place it somewhere on your machine, e.g. ./data.
+   Download the [Brain Tumor MRI Dataset](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset) from Kaggle         (glioma, meningioma, pituitary, and no-tumor classes), then split it into `train`/`val`/`test` folders and place it somewhere on     your machine, e.g. `./data`.
 
 4. **Update the data path**
    The notebook was originally built for Google Colab, so it mounts Google Drive. Replace that cell with a local path instead:
