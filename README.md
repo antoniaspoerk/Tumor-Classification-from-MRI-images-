@@ -5,10 +5,6 @@ Deep learning pipeline for classifying brain MRI scans into four categories
 modeling approaches of increasing complexity: a simple MLP, a CNN trained
 from scratch, a frozen pretrained VGG16, and a fine-tuned VGG16.
 
-Covers data exploration, MRI-specific data augmentation, training with early
-stopping, and evaluation (accuracy, F1, precision, recall), with a focus on
-which tumor types are most often confused and why.
-
 ## Dataset
 
 [Brain Tumor MRI Dataset](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset)
@@ -48,10 +44,10 @@ Classes: glioma, meningioma, pituitary, no tumor.
 | VGG16 (frozen) | 73.8% | 0.72 |
 | **VGG16 (fine-tuned)** | **89.3%** | **0.89** |
 
-Fine-tuning VGG16 gave the best result. Notably, the frozen VGG16 was the
-*worst* performer of the four — even behind the from-scratch CNN — which
+Fine-tuning VGG16 gave the best result. The frozen VGG16 was the
+*worst* performer of the four, even behind the from-scratch CNN, which
 suggests ImageNet features transfer poorly to grayscale MRI scans unless at
-least some convolutional layers are allowed to adapt; unfreezing the last
+least some convolutional layers are allowed to adapt. Unfreezing the last
 two blocks was enough to make the pretrained model the strongest model
 overall.
 
